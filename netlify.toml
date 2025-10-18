@@ -1,0 +1,13 @@
+[build]
+  command = "npm install"
+  functions = "functions"
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  command = "node server.js"
+  port = 3000
